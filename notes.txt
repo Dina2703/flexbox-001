@@ -20,7 +20,7 @@ Flex Item Properties:
 
  ---------------The Axes --------------------
  Depending it's a row or a column its main and cross axis are different.  
- <----------------MainAxis - flex-direction: row-----------------> (horisonal axis)
+ <----------------MainAxis - flex-direction: row-----------------> (horizonal axis)
  Cross Axis - flex-direction: row (vertical axis)
 
  Main Axis - flex-direction: column (vertical)
@@ -37,3 +37,9 @@ Flex Item Properties:
 
  Each browser has its own 'default' CSS values for each element type. Using the universal selector * to reset margins and padding to 0 removes any cross-browser inconsistencies that may result from the different default CSS values.
 
+In horizonal axis we need add height to move items inside it vertically, otherwise you can move only horizinally. Like align-items: center; properties doesn't work
+
+* align-self to align one of the items.
+.item:nth-of-type(3) {
+align-self: flex-end;
+}
