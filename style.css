@@ -1,59 +1,17 @@
-/* universal selector(The asterisk * ), to create a reset  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgb(255, 109, 77);
+  background: #ffbfa1;
 }
 
-.flex-container {
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: start;
-  /*align-items: center; */
-  background-color: rgb(199, 213, 213);
-  /* flex-wrap: wrap; */
+img {
+  max-width: 100%;
 }
-
-.item {
-  flex: 1;
-  /* flex-basis: 200px; */
-  /* flex-grow: 1; */
-  height: 100px;
-  margin: 5px;
-  color: #fff;
-  background: rgb(182, 82, 82);
-  border: 2px solid rgb(38, 36, 36);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.item:nth-of-type(1) {
-  /* align-self: flex-start; */
-  /* order: 2; */
-  /* flex-basis: 200px; */
-  /* flex-grow: 1; */
-  /* flex-shrink: 1; */
-}
-.item:nth-of-type(2) {
-  /* align-self: center; */
-  /* order: 1; */
-  /* flex-basis: 400px; */
-  /* flex-grow: 3; */
-  /* flex-basis: 300px; */
-  /* flex-shrink: 1; */
-}
-.item:nth-of-type(3) {
-  /* align-self: flex-end; */
-  /* order: 3; */
-  /* flex-basis: 300px; */
-  /* flex-grow: 2; */
-  /* flex-shrink: 4; */
-}
-
-
