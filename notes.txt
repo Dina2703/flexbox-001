@@ -1,0 +1,39 @@
+----------------Flexbox---------------
+The Flexible Box Model is a one dimensional layout model that provides a method to oofer space distrubution and powerful alignment capabilities.
+* FLEX CONTAINER is the element that holds flex items. A container is created/define with 'display: flex', where its children will put in horisonal row.
+* FLEX ITEMS are direct children of flec containers.
+
+Flex Container Properties: 
+ - flex-direction(to change from the horisonal row(defaul) to column.)
+ - flex-wrap
+ - flex-flow
+ - justify-content
+ - align-items
+ - align-content
+
+Flex Item Properties:
+ - order
+ - flex-grow
+ - flex-shrink
+ - flex-basis
+ - align-self
+
+ ---------------The Axes --------------------
+ Depending it's a row or a column its main and cross axis are different.  
+ <----------------MainAxis - flex-direction: row-----------------> (horisonal axis)
+ Cross Axis - flex-direction: row (vertical axis)
+
+ Main Axis - flex-direction: column (vertical)
+ Cross Axis - flex-direction: column (horisonal)
+
+ ------------Get Started---------------
+ Why we do these at the top:
+
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ Each browser has its own 'default' CSS values for each element type. Using the universal selector * to reset margins and padding to 0 removes any cross-browser inconsistencies that may result from the different default CSS values.
+
