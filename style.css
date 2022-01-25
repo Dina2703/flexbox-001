@@ -10,15 +10,14 @@ body {
 }
 
 .flex-container {
-  height: 600px;
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: start;
-  align-items: center;
+  /* flex-direction: column-reverse; */
+  justify-content: center;
+  /*align-items: center; */
   background-color: rgb(199, 213, 213);
 }
 
-.item:nth-of-type(1) {
+/* .item:nth-of-type(1) {
   align-self: flex-start;
 }
 .item:nth-of-type(2) {
@@ -26,7 +25,7 @@ body {
 }
 .item:nth-of-type(3) {
   align-self: flex-end;
-} 
+}  */
 
 .item {
   width: 100px;
@@ -35,4 +34,7 @@ body {
   color: #fff;
   background: rgb(92, 86, 86);
   border: 2px solid rgb(38, 36, 36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
