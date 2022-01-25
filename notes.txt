@@ -89,3 +89,27 @@ When you want the same width for every box-items. You can just set the flex-basi
   flex-basis: 100px;
   flex-grow: 1;
 }
+
+--------------Flex-Shrink---------------
+* flex-shrink is opposite of the flex-grow.
+first define 
+.item {
+flex-basis: 400px; 
+}    ///the end point//or max width where to stop shrinking at
+then., 
+.item:nth-of-type(1) {
+flex-shrink: 2; // 
+}
+
+---------SHORTHAND - FLEX PROPERTY------------
+property 'flex': flex-grow, flex-shrink and flex-basis. 
+.item {
+flex: 1 0 100px; 
+}
+Now we have three same size columns that all grow at the same rate and they started at 100px. A lot of the time don't need to basis, so 
+.item {
+flex: 1 0 0; 
+}, THE SHORTHAND OF IT, IS 
+.item {
+  flex: 1;
+}
