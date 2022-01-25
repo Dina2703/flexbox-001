@@ -54,3 +54,8 @@ first activate flexbox on the item like,
   justify-container: center;
   align-items: center;
 }
+
+----------------flex-wrap----------
+the items (with another 100px) that can't fit onto the page it's going to move it on to the next line.
+it helps with responsiveness
+flex-wrap: wrap; 
