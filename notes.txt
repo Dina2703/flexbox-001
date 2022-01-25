@@ -43,3 +43,6 @@ In horizonal axis we need add height to move items inside it vertically, otherwi
 .item:nth-of-type(3) {
 align-self: flex-end;
 }
+
+* justify-content  - always os on the main axis
+* align-items  - always is on the cross axis

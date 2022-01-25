@@ -10,9 +10,10 @@ body {
 }
 
 .flex-container {
-  height: 400px;
+  height: 600px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column-reverse;
+  justify-content: start;
   align-items: center;
   background-color: rgb(199, 213, 213);
 }
@@ -25,7 +26,7 @@ body {
 }
 .item:nth-of-type(3) {
   align-self: flex-end;
-}
+} 
 
 .item {
   width: 100px;
