@@ -59,3 +59,33 @@ first activate flexbox on the item like,
 the items (with another 100px) that can't fit onto the page it's going to move it on to the next line.
 it helps with responsiveness
 flex-wrap: wrap; 
+
+-------------flex-basis----------
+flex-basis we set on the item. It's going to be width of the box when it starts out(withour adding flex-shrink or grow)
+.item:nth-of-type(1) {
+  flex-basis: 200px;
+}
+-----------flex-grow-------------
+it's a factor of the flex-item's main size and it's specified as just a single number. The default of the flex-grow is 0. We can think of it kinda of a growth rate.
+.item {
+  flex-basis: 100px; //start width for boxes, above the number 100px boxes will start growing in size. 
+} 
+.item:nth-of-type(1) {
+  flex-grow: 1;
+}
+.item:nth-of-type(2) {
+  flex-grow: 3;
+  flex-basis: 200px; //if we add flex-basis onto one item, it's not going to go any smaller than 200px. 200px is the start point for it, and for the rest items flex-basis is 100px.
+}
+.item:nth-of-type(3) {
+  flex-grow: 1;
+}
+It's gonna take up the entire space (horizontally), here we want to say that the second item we want to be larger. It starts off at the basis of 100px and then as we extend as we make the screen wider the boxes grow at different rates.
+
+
+-------------Width for Cards---------------
+When you want the same width for every box-items. You can just set the flex-basis to the start point, and flex-grow: 1; which gonha make them all the same no matter what.
+.item {
+  flex-basis: 100px;
+  flex-grow: 1;
+}
