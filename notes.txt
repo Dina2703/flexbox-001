@@ -1,6 +1,6 @@
 ----------------Flexbox---------------
 The Flexible Box Model is a one dimensional layout model that provides a method to oofer space distrubution and powerful alignment capabilities.
-* FLEX CONTAINER is the element that holds flex items. A container is created/define with 'display: flex', where its children will put in horisonal row.
+* FLEX CONTAINER is the element that holds flex items. A container is created/define with 'display: flex', where its DIRECT children will put in horisonal row.
 * FLEX ITEMS are direct children of flec containers.
 
 Flex Container Properties: 
@@ -113,3 +113,5 @@ flex: 1 0 0;
 .item {
   flex: 1;
 }
+
+ margin: 0 auto;  /// to center your content
