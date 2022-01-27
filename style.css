@@ -139,6 +139,13 @@ h4 a {
 }
 /*everything inside it works under 768px width */
 @media (max-width: 768px) {
+  .navbar .container {
+    display: block;
+  }
+  .navbar .nav {
+    margin: -10px;
+  }
+
   .header .container {
     flex-direction: column;
     height: 100%;
@@ -149,5 +156,4 @@ h4 a {
   .boxes .container {
     display: block;
   }
-
 }
