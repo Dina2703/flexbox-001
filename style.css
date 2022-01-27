@@ -153,7 +153,10 @@ h4 a {
     text-align: center;
   }
 
-  .boxes .container {
+
+  .boxes .container { 
     display: block;
+    height: 100%;
+    padding: 20px;
   }
 }
