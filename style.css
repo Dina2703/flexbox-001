@@ -16,6 +16,7 @@ body {
 
 img {
   max-width: 100%;
+  margin: 0 30px;
 }
 
 h1,
@@ -37,7 +38,7 @@ ul {
   color: rgb(156, 53, 30);
 }
 .container {
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 50px;
 }
@@ -48,6 +49,7 @@ ul {
   height: 6em;
   position: sticky;
   top: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -70,17 +72,11 @@ ul {
   margin: 0 0.5em;
 }
 
-.header {
-  min-height: 400px;
-}
-
 .header h1 {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.2;
 }
-
-
 
 .header img {
   max-width: 200px;
@@ -89,7 +85,7 @@ ul {
 .header .container {
   display: flex;
   align-items: center;
-  height: 400px;
+  height: 300px;
 }
 
 section {
@@ -99,9 +95,27 @@ section {
   display: flex;
   justify-content: space-between;
 }
+
 .box {
   flex: 1;
-  
+  background: #e1a389;
+  color: rgb(135, 34, 34);
+  font-family: serif;
+  padding: 0 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  margin: 30px 10px;
+}
+.box h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+.box p {
+  width: 100%;
+  padding: 8px;
+}
+
+.box ul {
+  margin-bottom: 20px;
 }
 footer {
   height: 130px;
@@ -110,6 +124,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 footer .container {
@@ -121,4 +136,18 @@ footer .container {
 
 h4 a {
   color: rgb(156, 53, 30);
+}
+/*everything inside it works under 768px width */
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    height: 100%;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .boxes .container {
+    display: block;
+  }
+
 }
